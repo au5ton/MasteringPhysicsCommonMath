@@ -14,6 +14,8 @@
 (function() {
     window.g = 9.8;
     window.pi = Math.PI;
+    window.R = 8.3145;
+    window.avogadro = 6.0221409e+23;
     window.toDegrees = (angle) => angle * (180/Math.PI);
     window.toRadians = (angle) => angle * (Math.PI / 180);
     window.tan = x => Math.tan(window.toRadians(x));
@@ -26,6 +28,7 @@
     window.pow = (a,b) => Math.pow(a,b);
     window.sqrt = Math.sqrt;
     window.abs = Math.abs;
+    window.enot = (n) => n.toExponential();
 
     waitForKeyElements('.table-assignment tbody', () => {
         let rows = document.querySelectorAll('.table-assignment tbody tr');
