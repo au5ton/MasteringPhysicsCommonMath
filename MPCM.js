@@ -12,10 +12,11 @@
 // ==/UserScript==
 
 (function() {
-    window.g = 9.8;
+    window.g = 9.81;
     window.pi = Math.PI;
-    window.R = 8.3145;
+    window.R = 8.3145; // gas constant
     window.avogadro = 6.0221409e+23;
+    window.k = 1.38064852e-23; // boltzmann constant
     window.toDegrees = (angle) => angle * (180/Math.PI);
     window.toRadians = (angle) => angle * (Math.PI / 180);
     window.tan = x => Math.tan(window.toRadians(x));
